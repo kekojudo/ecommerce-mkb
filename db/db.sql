@@ -10,7 +10,7 @@ creado_usu timestamp(0) not null,
 modificado_usu timestamp(0) not null
 );
 
-use ecommercemkb;
+
 create table roles(
 id_rol bigint primary key auto_increment,
 nombre_rol varchar(90) not null unique,

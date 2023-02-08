@@ -43,12 +43,14 @@ module.exports = {
                     session_token: `JWT ${token}`,
                     roles: JSON.parse(myUser.roles)
                 }
+                console.log(data);
                 
                 return res.status(201).json({
                     success: true,
                     message: "La autenticación fue exitosa",
                     data: data
                 })
+                
             }
             else{
                 return res.status(401).json({

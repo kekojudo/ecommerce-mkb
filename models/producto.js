@@ -93,7 +93,7 @@ Producto.create = (producto, result) => {
             ],
         (err,res) => {
             if(err){
-                console.log('Error: ',err)
+                console.log('Error: backend ',err)
                 result(err,null)
             }
             
